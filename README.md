@@ -1,4 +1,4 @@
-# itsMYGRAM
+# itsmyGRAM
 Photo sharing website (Instagram clone) with Angular and Google Firebase
 
 ![itsmyGRAM](https://github.com/nabilfarhann/itsmyGRAM/blob/master/cover.png?raw=true)
