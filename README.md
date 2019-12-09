@@ -23,6 +23,8 @@ This website use free domain from FREENOM (1 Year), if link is dead use the alte
 
 
 - Make sure you have package-lock.json (I have to delete it in this repo)
+
+To Deploy it in firebase use command --> 'firebase init'
 ````
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
