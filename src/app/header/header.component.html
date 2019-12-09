@@ -1,0 +1,28 @@
+<nav>
+    <div class="menu">
+        <ul>
+            <img class="logo" src="assets/images/asset.svg" alt="logo">
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="menu-item" routerLink="/">Home</a>
+            </li>
+            <li routerLinkActive="active" *ngIf="isLoggedIn">
+                <a class="menu-item" routerLink="/following">Following</a>
+            </li>
+            <li routerLinkActive="active" *ngIf="isLoggedIn">
+                <a class="menu-item" routerLink="/favorites">Favorites</a>
+            </li>
+            <li routerLinkActive="active" *ngIf="isLoggedIn">
+                <a class="menu-item" routerLink="/myposts">{{name}}</a>
+            </li>
+            <li routerLinkActive="active" *ngIf="!isLoggedIn">
+                <a class="menu-item" routerLink="/login">Login</a>
+            </li>
+            <li routerLinkActive="active" *ngIf="!isLoggedIn">
+                <a class="menu-item" routerLink="/signup">Sign Up</a>
+            </li>
+            <li routerLinkActive="active" *ngIf="isLoggedIn" (click)="onLogout()">
+                <a class="menu-item" href="#">Sign Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>

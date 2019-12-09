@@ -1,1 +1,1092 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    min-height: 100vh;
+    background: url(assets/images/Stars.svg) bottom repeat-x;
+    padding-bottom: 3rem;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+/*--------------------------------------------------------------
+# Helper Utilities
+--------------------------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+
+/*--------------------------------------------------------------
+# Outer Container
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 992px) {
+    .outer-container {
+        padding-left: 80px;
+        background: url(assets/images/Stars.svg) bottom repeat-x;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .no-padding {
+        padding: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.portfolio-page .scroll-down {
+    margin-left: -60px;
+}
+
+.portfolio-content {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.home-page {
+    padding-top: 15px;
+}
+
+.home-page .portfolio-content {
+    margin-bottom: 15px;
+}
+
+.portfolio-content figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    width: 255px;
+    height: 255px;
+}
+
+.portfolio-content figure img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-content .entry-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 100%;
+    background: rgba(255, 255, 255, .9);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+@media only screen and (min-width: 360px) and (max-width:360px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 330px;
+        height: 330px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 330px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:320px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 290px;
+        height: 290px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width:420px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 381px;
+        height: 381px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 381px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width:430px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 395px;
+        height: 395px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 395px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width:380px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 345px;
+        height: 345px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 345px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 210px;
+        height: 210px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 210px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 800px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 210px;
+        height: 210px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 210px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1024px) {
+    .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 205px;
+        height: 205px;
+    }
+    .portfolio-content .entry-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 205px;
+        height: 100%;
+        background: rgba(255, 255, 255, .9);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+}
+
+.portfolio-content:hover .entry-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-content h3 {
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.home-page .portfolio-content h3 {
+    font-size: 2.25rem;
+}
+
+.portfolio-content h3 a {
+    color: #191919;
+    text-decoration: none;
+}
+
+.portfolio-content ul {
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+}
+
+.portfolio-content li {
+    margin: 0 3px;
+}
+
+.portfolio-content li a {
+    font-size: 0.875rem;
+    color: #a6a6a6;
+}
+
+@media screen and (min-width: 768px) {
+    .home-page {
+        padding: 0;
+    }
+    .home-page .portfolio-content {
+        margin-bottom: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+    padding: 20px 0;
+    margin: 0;
+    color: #181818;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.breadcrumbs li {
+    position: relative;
+    color: #181818;
+    padding: 0 12px;
+}
+
+.breadcrumbs li:nth-of-type(1) {
+    padding-left: 0;
+}
+
+.breadcrumbs li::after {
+    content: '/';
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 10px;
+}
+
+.breadcrumbs li:nth-last-of-type(1)::after {
+    display: none;
+}
+
+.breadcrumbs li a {
+    color: #191919;
+    text-decoration: none;
+}
+
+/*
+# Comment Form
+--------------------------------*/
+
+.comments-form {
+    margin-top: 100px;
+}
+
+.comment-reply-title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.comment-form input[type="text"], .comment-form input[type="password"], .comment-form input[type="email"], .comment-form textarea {
+    width: 100%;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    line-height: 1;
+    color: #000000;
+    outline: none;
+}
+
+.comment-form textarea {
+    line-height: 1.4;
+}
+
+.comment-form input[type="text"]:focus, .comment-form input[type="email"]:focus, .comment-form input[type="password"]:focus, .comment-form textarea:focus {
+    border-color: #232d37;
+}
+
+.comment-form button {
+    padding: 18px 30px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    outline: none;
+    cursor: pointer;
+    background: #171717;
+}
+
+.entry-content a {
+    color: #f0437e;
+}
+
+.entry-content a:hover {
+    color: #000000;
+}
+
+.errorbox {
+    margin-top: 20px;
+}
+
+.navbar-toggler:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.button-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-wrapper span.label {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    background: #191919;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#upload {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.eael-load-more-button {
+    position: relative;
+    background: #181818;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    border: 0;
+    padding: 15px 30px;
+    z-index: 2;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .25em;
+    transition: all .5s;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.animateButton {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: #181818;
+    border: 2px solid #181818;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* color for navbar #f7f8f9; */
+
+/* MYPOST Section only */
+
+@media only screen and (min-width: 370px) and (max-width:380px) {
+    .mypostonly .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 113px;
+        height: 113px;
+        margin-top: 10px;
+    }
+    .mypostonly .portfolio-content .entry-content {
+        width: 113px;
+        height: 100%;
+    }
+    .mypostonly .animateButton {
+        height: 18px;
+        width: 70px;
+        font-size: 8px;
+        margin-top: -20px;
+    }
+    .mypostonly .portfolio-content {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+    .mypostonly .portfolio-content .entry-content a {
+        font-size: 8px;
+    }
+    .mypostonly .portfolio-content .entry-content .marginonly {
+        margin-top: -30px;
+    }
+    .mypostonly .col-md-4 {
+        padding: 0px 2px;
+    }
+    .mypostonly {
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width:360px) {
+    .mypostonly .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 108px;
+        height: 108px;
+        margin-top: 10px;
+    }
+    .mypostonly .portfolio-content .entry-content {
+        width: 108px;
+        height: 100%;
+    }
+    .mypostonly .animateButton {
+        height: 18px;
+        width: 70px;
+        font-size: 8px;
+        margin-top: -20px;
+    }
+    .mypostonly .portfolio-content {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+    .mypostonly .portfolio-content .entry-content a {
+        font-size: 8px;
+    }
+    .mypostonly .portfolio-content .entry-content .marginonly {
+        margin-top: -30px;
+    }
+    .mypostonly .col-md-4 {
+        padding: 0px 2px;
+    }
+    .mypostonly {
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:320px) {
+    .mypostonly .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 94px;
+        height: 94px;
+        margin-top: 10px;
+    }
+    .mypostonly .portfolio-content .entry-content {
+        width: 94px;
+        height: 100%;
+    }
+    .mypostonly .animateButton {
+        height: 18px;
+        width: 70px;
+        font-size: 8px;
+        margin-top: -20px;
+    }
+    .mypostonly .portfolio-content {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+    .mypostonly .portfolio-content .entry-content a {
+        font-size: 8px;
+    }
+    .mypostonly .portfolio-content .entry-content .marginonly {
+        margin-top: -30px;
+    }
+    .mypostonly .col-md-4 {
+        padding: 0px 2px;
+    }
+    .mypostonly {
+        padding-left: 13px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width:420px) {
+    .mypostonly .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 124px;
+        height: 124px;
+        margin-top: 10px;
+    }
+    .mypostonly .portfolio-content .entry-content {
+        width: 124px;
+        height: 100%;
+    }
+    .mypostonly .animateButton {
+        height: 18px;
+        width: 70px;
+        font-size: 8px;
+        margin-top: -20px;
+    }
+    .mypostonly .portfolio-content {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+    .mypostonly .portfolio-content .entry-content a {
+        font-size: 8px;
+    }
+    .mypostonly .portfolio-content .entry-content .marginonly {
+        margin-top: -30px;
+    }
+    .mypostonly .col-md-4 {
+        padding: 0px 2px;
+    }
+    .mypostonly {
+        padding-left: 13px;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width:430px) {
+    .mypostonly .portfolio-content figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        width: 129px;
+        height: 129px;
+        margin-top: 10px;
+    }
+    .mypostonly .portfolio-content .entry-content {
+        width: 129px;
+        height: 100%;
+    }
+    .mypostonly .animateButton {
+        height: 18px;
+        width: 70px;
+        font-size: 8px;
+        margin-top: -20px;
+    }
+    .mypostonly .portfolio-content {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+    .mypostonly .portfolio-content .entry-content a {
+        font-size: 8px;
+    }
+    .mypostonly .portfolio-content .entry-content .marginonly {
+        margin-top: -30px;
+    }
+    .mypostonly .col-md-4 {
+        padding: 0px 2px;
+    }
+    .mypostonly {
+        padding-left: 13px;
+    }
+}
+
+/***************************** NEW LAYOUT INSTAGRAM **************************************/
+
+:root {
+    font-size: 10px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0.5rem auto #4d90fe;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Profile Section */
+
+.profile {
+    padding: 5rem 0;
+}
+
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profile-image {
+    float: left;
+    width: calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.profile-user-settings, .profile-stats, .profile-bio {
+    float: left;
+    width: calc(66.666% - 2rem);
+}
+
+.profile-user-settings {
+    margin-top: 1.1rem;
+}
+
+.profile-user-name {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.profile-edit-btn {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    padding: 0 2.4rem;
+    margin-left: 2rem;
+}
+
+.profile-settings-btn {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.profile-stats {
+    margin-top: 2.3rem;
+}
+
+.profile-stats li {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.profile-stats li:last-of-type {
+    margin-right: 0;
+}
+
+.profile-bio {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 2.3rem;
+}
+
+.profile-real-name, .profile-stat-count, .profile-edit-btn {
+    font-weight: 600;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info, .gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.fa-clone, .fa-comment {
+    transform: rotateY(180deg);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Loader */
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    border: 0.6rem solid #999;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: loader 500ms linear infinite;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 40rem) {
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem 0;
+    }
+    .profile::after {
+        display: none;
+    }
+    .profile-image, .profile-user-settings, .profile-bio, .profile-stats {
+        float: none;
+        width: auto;
+    }
+    .profile-image img {
+        width: 7.7rem;
+    }
+    .profile-user-settings {
+        flex-basis: calc(100% - 10.7rem);
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    .profile-user-name {
+        font-size: 2.2rem;
+    }
+    .profile-edit-btn {
+        order: 1;
+        padding: 0;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .profile-edit-btn {
+        margin-left: 0;
+    }
+    .profile-bio {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+    }
+    .profile-edit-btn, .profile-bio, .profile-stats {
+        flex-basis: 100%;
+    }
+    .profile-stats {
+        order: 1;
+        margin-top: 1.5rem;
+    }
+    .profile-stats ul {
+        display: flex;
+        text-align: center;
+        padding: 1.2rem 0;
+        border-top: 0.1rem solid #dadada;
+        border-bottom: 0.1rem solid #dadada;
+    }
+    .profile-stats li {
+        font-size: 1.4rem;
+        flex: 1;
+        margin: 0;
+    }
+    .profile-stat-count {
+        display: block;
+    }
+}
+
+/* Spinner Animation */
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+
+The following code will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
+
+*/
+
+@supports (display: grid) {
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 3rem;
+        align-items: center;
+    }
+    .profile-image {
+        grid-row: 1 / -1;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-gap: 2rem;
+    }
+    .profile-image, .profile-user-settings, .profile-stats, .profile-bio, .gallery-item, .gallery {
+        width: auto;
+        margin: 0;
+    }
+    @media (max-width: 40rem) {
+        .profile {
+            grid-template-columns: auto 1fr;
+            grid-row-gap: 1.5rem;
+        }
+        .profile-image {
+            grid-row: 1 / 2;
+        }
+        .profile-user-settings {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 1rem;
+        }
+        .profile-edit-btn, .profile-stats, .profile-bio {
+            grid-column: 1 / -1;
+        }
+        .profile-user-settings, .profile-edit-btn, .profile-settings-btn, .profile-bio, .profile-stats {
+            margin: 0;
+        }
+    }
+}
+
+/************************** NAVBAR ***********************************/
+
+.logo {
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav {
+    height: 44px;
+    background: #191919;
+}
+
+.menu {
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    overflow: hidden;
+}
+
+.menu ul {
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu ul li, .menu ul li a {
+    color: #fff;
+    line-height: 44px;
+    text-decoration: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .menu{
+        margin: auto;
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .menu ul {
+        width: 100%;
+        margin-left: -20px;
+        justify-content: space-between;
+    }
+    .menu ul li {
+        list-style: none;
+        font-family: 'Montserrat';
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .menu{
+        margin: auto;
+        width: 90%;
+    }
+    .menu ul {
+        width: 100%;
+        margin-left: -20px;
+    }
+    .menu ul li {
+        list-style: none;
+        font-family: 'Montserrat';
+        font-size: 14px;
+    }
+}

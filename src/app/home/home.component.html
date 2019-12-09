@@ -1,0 +1,31 @@
+<div class="outer-container">
+    <div class="container portfolio-page">
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumbs flex align-items-center">
+                    <li><a routerLink="/">Home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <app-post *ngFor="let post of all" [imageName]="post.data.name" [displayDeleteButton]="false"
+                (followClicked)="onFollowClicked($event)" (favoriteClicked)="onFavoritesClicked($event)">
+            </app-post>
+        </div>
+
+        <div class="row">
+            <button class="eael-load-more-button" (click)="onLoadMore()"><span>Load More</span></button>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumbs flex align-items-center">
+                    <li><a>Welcome to itsmyGRAM by NABIL FARHAN. Angular photo sharing website with
+                            Firebase.</a></li>
+                    <li><a>You need to login first before you can see post from users.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

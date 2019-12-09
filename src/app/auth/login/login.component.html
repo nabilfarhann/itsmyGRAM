@@ -1,0 +1,18 @@
+<div class="outer-container">
+    <div class="container">
+        
+        <div class="comments-form">
+            <div class="comment-respond">
+                <h3 class="comment-reply-title">Sign In</h3>
+
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="comment-form">
+                    <input type="email" placeholder="Email" name="email" id="email" ngModel required>
+                    <input type="password" placeholder="Password" name="password" id="password" ngModel required>
+                    <button type="submit">Submit</button>
+                </form><!-- .comment-form -->
+            </div><!-- .comment-respond -->
+        </div><!-- .comments-form -->
+
+
+    </div><!-- .container -->
+</div><!-- .outer-container -->

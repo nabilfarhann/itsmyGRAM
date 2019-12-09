@@ -1,0 +1,58 @@
+<header>
+
+    <div class="container">
+
+        <div class="profile">
+
+            <div class="profile-image">
+
+                <img src="assets/images/avatar2.jpg" alt="">
+
+            </div>
+
+            <div class="profile-user-settings">
+
+                <h1 class="profile-user-name">{{name}}</h1>
+
+            </div>
+
+            <div class="profile-stats">
+
+                <ul>
+                    <li><span class="profile-stat-count">000</span> posts</li>
+                    <li><span class="profile-stat-count">000</span> followers</li>
+                    <li><span class="profile-stat-count">000</span> following</li>
+                </ul>
+
+            </div>
+
+            <div class="profile-bio">
+
+                <p><span class="profile-real-name">{{name}}</span> Still under construction.. 📷✈️🏕️</p>
+                <div class="button-wrapper">
+                    <span class="label">
+                        Upload Photo
+                    </span>
+
+                    <input type="file" (change)="onFileSelection($event)" name="upload" accept=".png, .jpeg, .jpg"
+                        id="upload" class="upload-box" placeholder="Upload File">
+                </div>
+            </div>
+
+        </div>
+        <!-- End of profile section -->
+
+    </div>
+    <!-- End of container -->
+
+</header>
+
+<div class="outer-container">
+    <div class="container portfolio-page">
+        <div class="row mypostonly" style="margin-top: 20px;">
+            <app-post *ngFor="let post of postLists" [imageName]="post.data.name" [displayPostedBy]="false"
+                (deleteClicked)="onDeleteClicked($event)">
+            </app-post>
+        </div>
+    </div>
+</div>

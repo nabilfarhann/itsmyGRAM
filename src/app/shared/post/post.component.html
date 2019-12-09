@@ -1,0 +1,23 @@
+<div class="col-md-4">
+  <div class="portfolio-content">
+    <figure>
+      <img [src]="defaultImage">
+    </figure>
+
+    <div class="entry-content flex flex-column align-items-center justify-content-center">
+      <h3 *ngIf="imageData.uploadedBy && displayPostedBy"><a>{{imageData.uploadedBy.name}}</a></h3>
+
+      <ul *ngIf="imageData.creationDate" class="flex flex-wrap justify-content-center">
+        <li><a>{{imageData.creationDate | date: 'dd/MM/yy'}}</a></li>
+      </ul>
+
+      <hr>
+      <a *ngIf="imageData.favoriteCount >= 0" class="marginonly"><i class="fas fa-heart" style="color: #e31b23;"></i> {{imageData.favoriteCount}} Favorites</a>
+
+      <hr>
+      <a *ngIf="displayFollowButton" (click)="onFollowClicked()" href="#">Follow User</a>
+      <a *ngIf="displayFavoritesButton" (click)="onFavoritesClicked()" href="#">Add Image to favorites</a>
+      <button *ngIf="displayDeleteButton" (click)="onDeleteClicked()" class="animateButton">Delete</button>
+    </div>
+  </div>
+</div>

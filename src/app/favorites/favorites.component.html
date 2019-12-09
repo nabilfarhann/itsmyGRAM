@@ -1,0 +1,20 @@
+<div class="outer-container">
+    <div class="container portfolio-page">
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumbs flex align-items-center">
+                    <li><a routerLink="/favorites">Favorites</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <app-post *ngFor="let imageData of favoritesList"
+                        [imageName]="imageData.name"
+                        [displayFavoritesButton]="false"
+                        [displayDeleteButton]="false"
+            >
+            </app-post>     
+        </div>
+    </div>
+</div>

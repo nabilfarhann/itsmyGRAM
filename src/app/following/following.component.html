@@ -1,0 +1,21 @@
+<div class="outer-container">
+    <div class="container portfolio-page">
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumbs flex align-items-center">
+                    <li><a routerLink="/following">Following</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <app-post *ngFor="let post of postList"
+                        [imageName]="post.data.name"
+                        [displayFollowButton]="false"
+                        [displayFavoritesButton]="false"
+                        [displayDeleteButton]="false"
+            >
+            </app-post>     
+        </div>
+    </div>
+</div>
