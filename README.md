@@ -1,7 +1,7 @@
 # itsMYGRAM
 Photo sharing website (Instagram clone) with Angular and Google Firebase
 
-![itsmyGRAM](https://github.com/nabilfarhann/Vidhub/blob/master/img/Vidhub.png?raw=true)
+![itsmyGRAM](https://github.com/nabilfarhann/itsmyGRAM/blob/master/cover.png?raw=true)
 
 :star2::star2: **Don't forget to give this repo a star!** :star2::star2:
 
