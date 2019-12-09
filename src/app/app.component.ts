@@ -17,12 +17,7 @@ export class AppComponent implements OnInit {
   ngOnInit(){
 
     const config = {
-      apiKey: "AIzaSyBkkFFNJUm1VIKL_eM9W0Ckbe-H9WF2RBY",
-      authDomain: "photolib-27e7e.firebaseapp.com",
-      databaseURL: "https://photolib-27e7e.firebaseio.com",
-      projectId: "photolib-27e7e",
-      storageBucket: "photolib-27e7e.appspot.com",
-      messagingSenderId: "173087680831"
+      <Paste your Firebase Config here>
     };
     firebase.initializeApp(config);
 
