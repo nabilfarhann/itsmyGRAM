@@ -7,12 +7,7 @@ importScripts('https://www.gstatic.com/firebasejs/5.9.2/firebase-messaging.js');
 // Initialize the Firebase app in the service worker by passing in the
 // messagingSenderId.
 var config = {
-  apiKey: "AIzaSyBkkFFNJUm1VIKL_eM9W0Ckbe-H9WF2RBY",
-  authDomain: "photolib-27e7e.firebaseapp.com",
-  databaseURL: "https://photolib-27e7e.firebaseio.com",
-  projectId: "photolib-27e7e",
-  storageBucket: "photolib-27e7e.appspot.com",
-  messagingSenderId: "173087680831"
+  <Paste Firebase Config here>
 };
 firebase.initializeApp(config);
 
