@@ -19,7 +19,8 @@ This website use free domain from FREENOM (1 Year), if link is dead use the alte
 3. Create Firebase Database
 4. Change config with your Firebase api key in "app.component.ts" and "firebase-messaging-sw.js"
 5. Change to firebase default name in ".firebasesrc"
-6. Run!
+6. npm install
+7. ng serve
 
 
 - Make sure you have package-lock.json (I have to delete it in this repo)
